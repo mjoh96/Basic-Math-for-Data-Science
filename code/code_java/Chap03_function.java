@@ -32,39 +32,27 @@ public class Chap03_function {
 
         // 3. 배열에 구구단 결과 저장
         for (int i = 0; i < guguArray.length; i++) {
-
             for (int j = 0; j < guguArray[i].length; j++) {
-
                 guguArray[i][j] = (start_Num + i) * (j + 2);
-
             }
         }
 
-
         // 4. 출력 함수 호출
         printGugu(guguArray, start_Num);
-
 
         // 5. Scanner 종료
         scanner.close();
     }
 
-
     // 구구단 출력 함수
     public static void printGugu(int[][] guguArray, int start_Num) {
-
         int i = start_Num;
-
         // for-each
         for (int[] dan : guguArray) {
-
             int j = 2;
-
             for (int result : dan) {
-
                 System.out.print('\t');
                 System.out.println(i + "*" + j + "=" + result);
-
                 j++;
             }
 
