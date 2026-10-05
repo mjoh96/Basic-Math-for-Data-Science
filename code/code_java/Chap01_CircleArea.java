@@ -1,4 +1,4 @@
-package javastudy.Chap01;
+package code.code_java;
 import java.util.Scanner;
 
 //1. 상수 파이값을 지정한다.
@@ -7,7 +7,7 @@ import java.util.Scanner;
 //3. 넓이를 구한다 (반지름^2*파이)
 //4. 값을 출력한다
 
-public class CircleArea {
+public class Chap01_CircleArea {
     public static void main(String[] args) {
         final double PI = 3.14;
         System.out.println("원의 넓이를 구할 반지름을 입력하세요");
