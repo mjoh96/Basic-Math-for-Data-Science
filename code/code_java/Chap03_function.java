@@ -1,4 +1,4 @@
-package code.code_java;
+
 
 import java.util.Scanner;
 
@@ -24,11 +24,9 @@ public class Chap03_function {
             end_Num = scanner.nextInt();
         }
 
-
         // 2. 구구단 결과를 저장할 배열 생성
         // 2~9까지 총 8개의 결과를 저장
         int[][] guguArray = new int[end_Num - start_Num + 1][8];
-
 
         // 3. 배열에 구구단 결과 저장
         for (int i = 0; i < guguArray.length; i++) {

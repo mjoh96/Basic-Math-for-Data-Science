@@ -1,4 +1,4 @@
-package code.code_java;
+
 import java.util.Scanner;
 
 //1. 상수 파이값을 지정한다.
