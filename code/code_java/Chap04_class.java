@@ -15,36 +15,22 @@ public class Chap04_class {
             System.out.print(i + 1 + "번째 숫자를 입력하세요: ");
             numbers[i] = scanner.nextInt();
         }
-        
-        //최대값(myMax)
-        int max_value = numbers[0];
-        for (int i = 1; i < 5; i++) {
-            if (max_value < numbers[i]) {
-                max_value = numbers[i];
-            }
-        }
-        
-        //최소값(myMin)
-        int min_value = numbers[0];
-        for (int i = 1; i < 5; i++) {
-            if (min_value > numbers[i]) {
-                min_value = numbers[i];
-            }
-        }
-        
-        //합계(mySum)
-        int sum_value=0;
-        for (int i=0; i<5; i++){
-            sum_value=sum_value+numbers[i];
-        }
+    Chap04_myMax maxCalculator = new Chap04_myMax();
+        int max_value = maxCalculator.myMax(numbers);
+    
+    Chap04_myMin minCalculator = new Chap04_myMin();
+        int min_value = minCalculator.myMin(numbers);
+    
+    Chap04_mySum sumCalculator = new Chap04_mySum();
+        int sum_value = sumCalculator.mySum(numbers);
 
-        //평균(myAvg)
-        double avg_value = (double) sum_value / numbers.length;
+    Chap04_myAvg avgCalculator = new Chap04_myAvg();
+        double avg_value = avgCalculator.myAvg(numbers);
 
-        System.out.println("최댓값은 "+max_value+"입니다."); 
-        System.out.println("최솟값은 "+min_value+"입니다.");
-        System.out.println("합계는 "+sum_value+"입니다.");
-        System.out.println("평균은 "+avg_value+"입니다.");
+        System.out.println("최댓값은 " + max_value + "입니다.");
+        System.out.println("최솟값은 " + min_value + "입니다.");
+        System.out.println("합계는 " + sum_value + "입니다.");
+        System.out.println("평균은 " + avg_value + "입니다.");
         scanner.close();
     }
 
