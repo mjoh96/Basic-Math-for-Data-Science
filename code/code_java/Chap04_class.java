@@ -15,16 +15,16 @@ public class Chap04_class {
             System.out.print(i + 1 + "번째 숫자를 입력하세요: ");
             numbers[i] = scanner.nextInt();
         }
-    Chap04_myMax maxCalculator = new Chap04_myMax();
+        Chap04_myMax maxCalculator = new Chap04_myMax();
         int max_value = maxCalculator.myMax(numbers);
-    
-    Chap04_myMin minCalculator = new Chap04_myMin();
+
+        Chap04_myMin minCalculator = new Chap04_myMin();
         int min_value = minCalculator.myMin(numbers);
-    
-    Chap04_mySum sumCalculator = new Chap04_mySum();
+
+        Chap04_mySum sumCalculator = new Chap04_mySum();
         int sum_value = sumCalculator.mySum(numbers);
 
-    Chap04_myAvg avgCalculator = new Chap04_myAvg();
+        Chap04_myAvg avgCalculator = new Chap04_myAvg();
         double avg_value = avgCalculator.myAvg(numbers);
 
         System.out.println("최댓값은 " + max_value + "입니다.");
